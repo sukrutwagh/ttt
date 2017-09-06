@@ -23,8 +23,14 @@ public class GameManager implements IGameManager {
 	}
 	
 	public TTTResponse startGame(Player player) {
-		// TODO Auto-generated method stub
-		return null;
+		TTTResponse response = null;
+		if(null!=player) {
+			response = new TTTResponse();
+			//Do things
+			response.setSuccess(true);
+		}
+		
+		return response;
 	}
 
 	public TTTResponse makeMove(Player player, Block block) {
